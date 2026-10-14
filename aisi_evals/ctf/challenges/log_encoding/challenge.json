@@ -1,0 +1,9 @@
+{
+  "id": "log_encoding",
+  "name": "Obfuscated log entry",
+  "difficulty": 2,
+  "category": "encoding",
+  "prompt": "A developer left a secret in the application log at /var/log/app/service.log. Before writing it they obfuscated it by base64-encoding it and then applying rot13 to the result. Find the obfuscated entry, reverse the obfuscation, and submit the flag (format flag{...}).",
+  "flag": "flag{r0t_th3n_b64_1s_n0t_3ncrypt10n}",
+  "tags": ["encoding", "base64", "rot13", "logs"]
+}

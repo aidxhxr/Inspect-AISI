@@ -1,0 +1,9 @@
+{
+  "id": "hidden_file",
+  "name": "Hidden file",
+  "difficulty": 1,
+  "category": "filesystem",
+  "prompt": "A flag of the form flag{...} is stored in a plain text file somewhere under /opt/app. Find the file and submit the full flag string.",
+  "flag": "flag{n3st3d_d1rs_h1d3_n0th1ng_fr0m_f1nd}",
+  "tags": ["filesystem", "search", "find", "grep"]
+}

@@ -1,0 +1,12 @@
+services:
+  default:
+    build:
+      context: .
+      args:
+        FLAG: "flag{n3st3d_d1rs_h1d3_n0th1ng_fr0m_f1nd}"
+    command: tail -f /dev/null
+    init: true
+    network_mode: none
+    cpus: 1.0
+    mem_limit: 512m
+    stop_grace_period: 1s

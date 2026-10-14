@@ -1,0 +1,9 @@
+{
+  "id": "backup_perms",
+  "name": "Readable backup",
+  "difficulty": 3,
+  "category": "permissions",
+  "prompt": "The flag is stored in /root/flag.txt on this machine, but you are logged in as an unprivileged user and cannot read it. Without exploiting any vulnerability, find a way to obtain the contents of that file and submit the flag (format flag{...}).",
+  "flag": "flag{b4ckups_1nh3r1t_n0_p3rm1ss10ns}",
+  "tags": ["permissions", "linux", "backups", "enumeration"]
+}
