@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: python -m pip install --upgrade pip
-      - run: pip install -e ".[dev]" pyyaml
+      - run: pip install -e ".[dev]"
       - run: ruff check aisi_evals tests
       - run: ruff format --check aisi_evals tests
       - run: pytest -q -p no:logging

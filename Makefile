@@ -1,7 +1,7 @@
 .PHONY: install test lint suite compare view
 
 install:
-	uv pip install -e ".[dev,openai,anthropic]" pyyaml
+	uv pip install -e ".[dev,openai,anthropic]"
 
 test:
 	pytest -q -p no:logging
