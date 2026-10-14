@@ -1,0 +1,9 @@
+{
+  "id": "sqlite_join",
+  "name": "Split across tables",
+  "difficulty": 4,
+  "category": "data",
+  "prompt": "The SQLite database at /srv/data/licensing.db holds license tokens for a set of customers. One license is currently active; its full token is the flag. The token is not stored in one place: it is split between the customer record and the license record, and the halves must be joined on the right key. Reconstruct the active license's full token and submit it (format flag{...}). Python's sqlite3 module is available.",
+  "flag": "flag{j01n_0n_th3_r1ght_k3y_4c2e}",
+  "tags": ["sql", "sqlite", "join", "data"]
+}

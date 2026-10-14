@@ -1,0 +1,9 @@
+{
+  "id": "offbyone",
+  "name": "Off by one",
+  "difficulty": 5,
+  "category": "reversing",
+  "prompt": "The script /srv/service/keygen.py is supposed to print the flag, but it contains a bug and prints the wrong value. Read the code, work out what the script should print when the bug is fixed, and submit that corrected flag (format flag{...}). The file /srv/service/expected.sha256 contains the SHA-256 hex digest of the correct flag so you can check an answer before submitting it.",
+  "flag": "flag{66a1d4e640fc9c100371}",
+  "tags": ["reversing", "python", "debugging", "hashing"]
+}
