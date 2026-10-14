@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aisi-evals"
+version = "0.1.0"
+description = "Inspect evaluation tasks with calibration, consistency and sandboxed-agent measurements"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Amirkhan Aidarkhan" }]
+dependencies = [
+    "inspect-ai>=0.3.270",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "sympy>=1.12",
+    "datasets>=2.19",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+openai = ["openai>=1.50"]
+anthropic = ["anthropic>=0.40"]
+dev = ["pytest>=8", "pytest-asyncio>=0.23", "ruff>=0.5", "mypy>=1.10"]
+
+[project.scripts]
+aisi-evals = "aisi_evals.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["aisi_evals*"]
+
+[tool.setuptools.package-data]
+aisi_evals = ["ctf/challenges/**/*", "data/*.jsonl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
